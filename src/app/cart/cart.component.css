@@ -1,0 +1,26 @@
+.holder {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 25px 15px;
+  max-width: 100%;
+  width: 100%;
+
+}
+
+input {
+  width: 100%;
+}
+
+button.asd {
+  margin-left: 1em;
+ 
+}
+
+button.goBack {
+  margin-left: 1em;
+ 
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

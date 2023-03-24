@@ -1,0 +1,33 @@
+.seperator {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 25px 15px;
+}
+
+hr {
+  border: 2px solid rgb(156, 156, 156);
+  border-radius: 5px;
+}
+
+button.goBack {
+  margin: 0px 0px 0px 1em;
+}
+
+
+.wrapper button.try a {
+  color: white;
+}
+
+p.parts {
+  color: black;
+  font-weight: 600;
+  
+}
+
+div.avail {
+  display: flex;
+}
+
+div.avail p.part {
+  color: red;
+  padding-left: 0.5em;
+}

@@ -1,0 +1,20 @@
+<h2>Service Details</h2>
+
+<div *ngIf="product" class="seperator">
+  <h3>{{ product.name }}</h3>
+  <hr />
+  <h4>{{ product.price | currency }}</h4>
+  <p>{{ product.description }}</p>
+  <div class="avail">
+    <p class="parts">Service we Offer:</p>
+    <p class="part">{{ product.parts }}</p>
+  </div>
+  <button type="button" (click)="addToCart(product)">Add Service</button>
+  <button class="goBack" type="button" (click)="goBack()">Go Back</button>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

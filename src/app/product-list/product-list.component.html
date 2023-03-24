@@ -1,0 +1,42 @@
+<div class="container">
+  <img src="/assets/ferarri3.jpg" style="width:100%;" />
+  <div class="centered">WE BUILD AWESOME DRIVING CARS</div>
+</div>
+<div class="eh3">
+  <h3>OUR TEAM IS FACTORY TRAINED TO SERVICE YOUR SUPER CAR.</h3>
+  <p>LEARN MORE ABOUT THE SERVICES WE OFFER FOR THE FOLLOWING MANUFACTURERS</p>
+</div>
+<div class="wrapper">
+  <div *ngFor="let product of products" class="seperator">
+    <h3>
+      <a
+        [title]="product.name + ' details'"
+        [routerLink]="['/products', product.id]"
+      >
+        {{ product.name }}
+      </a>
+      <hr />
+    </h3>
+
+    <p *ngIf="product.description">{{ product.description }}</p>
+    <div>
+      <button type="button">
+        <a
+          [title]="product.name + ' details'"
+          [routerLink]="['/products', product.id]"
+        >
+          Service
+        </a>
+      </button>
+
+      <button class="sAvailable" type="button" (click)="onNotify()">
+        Check Service
+      </button>
+    </div>
+  </div>
+</div>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
